@@ -1,0 +1,61 @@
+*{
+    font-family: 'Circular-black', sans-serif;
+}
+
+@keyframes moveBannerCard {
+    from{
+     transform: translateY(150px);
+     opacity: 0.3;
+    }
+    to{
+     transform: translateX(0);
+     opacity: 1;
+    }
+ }
+
+.image-container {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    margin-bottom: 20px;
+    padding: 60px;
+    height: 60vh;
+    color: #fff;
+}
+.image-container img{
+    animation: moveBannerCard 1s forwards;
+}
+
+.lyrics{
+    font-size: 20px;
+    animation: moveBannerCard 1s forwards;
+}
+.music-player{
+    animation: moveBannerCard 1s forwards;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.description{
+    animation: moveBannerCard 1s forwards;
+    padding: 20px;
+}
+.description p{
+    font-size: 20px;
+    list-style-type: style;;
+}
+.description span{
+    font-size: 16px;
+}
+.image-container img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+.titleLarge{
+    animation: moveBannerCard 1s forwards;
+    mask-image: linear-gradient(#000, rgba(0,0,0,0.001));
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 30px;
+}
